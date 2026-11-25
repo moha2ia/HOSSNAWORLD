@@ -10,6 +10,7 @@ import { LoadingOverlay } from './components/LoadingOverlay';
 import { MobileControls } from './components/MobileControls';
 import { Notifications } from './components/Notifications';
 import { PauseMenu } from './components/PauseMenu';
+import { RotateGate } from './components/RotateGate';
 import { SettingsMenu } from './components/SettingsMenu';
 import { StartScreen } from './components/StartScreen';
 import { GameCanvas } from './game/Scene';
@@ -91,6 +92,7 @@ export default function App() {
       <Journal />
 
       {showLoader && <LoadingOverlay done={loaderDone} />}
+      <RotateGate />
     </div>
   );
 }

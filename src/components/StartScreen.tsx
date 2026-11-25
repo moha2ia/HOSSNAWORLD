@@ -1,4 +1,5 @@
 import { GAME_INFO } from '../config/gameConfig';
+import { enterImmersiveMode } from '../game/immersive';
 import { QUESTS, starCount } from '../game/quests';
 import { useGameStore } from '../game/store';
 import { GearIcon, HeartIcon, MuteIcon, PlayIcon, SoundIcon, StarIcon } from './Icons';
@@ -90,7 +91,10 @@ export const StartScreen = ({ ready }: { ready: boolean }) => {
         <div className="start-buttons">
           <button
             className="button button--primary button--play"
-            onClick={startGame}
+            onClick={() => {
+              enterImmersiveMode();
+              startGame();
+            }}
             disabled={!ready}
           >
             <PlayIcon size={22} />
