@@ -114,6 +114,28 @@ export const CompassIcon = ({ size = 20, className }: IconProps) => (
   </svg>
 );
 
+export const ExpandIcon = ({ size = 20, className }: IconProps) => (
+  <svg {...base(size)} className={className}>
+    <path
+      d="M9.2 4H5.5A1.5 1.5 0 004 5.5v3.7M14.8 4h3.7A1.5 1.5 0 0120 5.5v3.7M9.2 20H5.5A1.5 1.5 0 014 18.5v-3.7M14.8 20h3.7a1.5 1.5 0 001.5-1.5v-3.7"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const CollapseIcon = ({ size = 20, className }: IconProps) => (
+  <svg {...base(size)} className={className}>
+    <path
+      d="M4 9.2h3.7A1.5 1.5 0 009.2 7.7V4M20 9.2h-3.7A1.5 1.5 0 0114.8 7.7V4M4 14.8h3.7a1.5 1.5 0 011.5 1.5V20M20 14.8h-3.7a1.5 1.5 0 00-1.5 1.5V20"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
 export const SparkleIcon = ({ size = 20, className }: IconProps) => (
   <svg {...base(size)} className={className}>
     <path

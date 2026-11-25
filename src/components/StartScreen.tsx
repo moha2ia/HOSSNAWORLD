@@ -1,5 +1,5 @@
 import { GAME_INFO } from '../config/gameConfig';
-import { enterImmersiveMode } from '../game/immersive';
+import { enterImmersiveMode, offerFullscreenHelpIfNeeded } from '../game/immersive';
 import { QUESTS, starCount } from '../game/quests';
 import { useGameStore } from '../game/store';
 import { GearIcon, HeartIcon, MuteIcon, PlayIcon, SoundIcon, StarIcon } from './Icons';
@@ -94,6 +94,7 @@ export const StartScreen = ({ ready }: { ready: boolean }) => {
             onClick={() => {
               enterImmersiveMode();
               startGame();
+              offerFullscreenHelpIfNeeded();
             }}
             disabled={!ready}
           >

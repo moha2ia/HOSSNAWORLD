@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
 import { audio } from '../game/audio';
 import { requestCameraRecenter } from '../game/cameraState';
+import { toggleImmersiveMode } from '../game/immersive';
 import { countCollected, starCount } from '../game/quests';
 import { useGameStore } from '../game/store';
+import { useFullscreen } from '../ui/useFullscreen';
 import { useMobileLayout } from '../ui/useMobileLayout';
 import {
   BookIcon,
+  CollapseIcon,
   CompassIcon,
   CrystalIcon,
+  ExpandIcon,
   MuteIcon,
   PauseIcon,
   SoundIcon,
@@ -25,6 +29,7 @@ export const GameHUD = () => {
   const openModal = useGameStore((state) => state.openModal);
   const modal = useGameStore((state) => state.modal);
   const mobile = useMobileLayout();
+  const { active: fullscreen, supported: fullscreenSupported } = useFullscreen();
   const [showHint, setShowHint] = useState(true);
 
   const stars = starCount(collected);
@@ -91,6 +96,19 @@ export const GameHUD = () => {
           >
             <CompassIcon size={19} />
           </button>
+          {fullscreenSupported && (
+            <button
+              className="icon-button"
+              onClick={() => {
+                toggleImmersiveMode();
+                audio.play('ui');
+              }}
+              aria-label={fullscreen ? 'Leave full screen' : 'Enter full screen'}
+              title={fullscreen ? 'Leave full screen' : 'Full screen'}
+            >
+              {fullscreen ? <CollapseIcon size={19} /> : <ExpandIcon size={19} />}
+            </button>
+          )}
           <button
             className="icon-button"
             onClick={() => {
