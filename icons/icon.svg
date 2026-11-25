@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Hossna's Secret World">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe9f0" />
+      <stop offset="0.55" stop-color="#fbd3e3" />
+      <stop offset="1" stop-color="#e3d2fb" />
+    </linearGradient>
+    <linearGradient id="heart" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#ff9cc0" />
+      <stop offset="1" stop-color="#e2669b" />
+    </linearGradient>
+    <linearGradient id="star" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe6a0" />
+      <stop offset="1" stop-color="#f2b64c" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="url(#sky)" />
+  <circle cx="256" cy="262" r="168" fill="#fff6f9" opacity="0.55" />
+  <path
+    d="M256 408c-12 0-118-70-118-186 0-58 44-96 96-96 18 0 34 6 46 16 12-10 28-16 46-16 52 0 96 38 96 96 0 116-106 186-118 186z"
+    fill="url(#heart)"
+    stroke="#d4598b"
+    stroke-width="7"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M176 200c4-26 22-42 46-46"
+    fill="none"
+    stroke="#fff3f8"
+    stroke-width="15"
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+  <path
+    d="M384 122l12 30 30 12-30 12-12 30-12-30-30-12 30-12z"
+    fill="url(#star)"
+  />
+  <path
+    d="M126 324l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"
+    fill="#fff4cf"
+    opacity="0.9"
+  />
+  <path
+    d="M398 330l6 15 15 6-15 6-6 15-6-15-15-6 15-6z"
+    fill="#fff4cf"
+    opacity="0.85"
+  />
+  <g fill="#7b3f5c">
+    <circle cx="216" cy="252" r="10" />
+    <circle cx="296" cy="252" r="10" />
+  </g>
+  <path d="M232 288c14 16 34 16 48 0" fill="none" stroke="#7b3f5c" stroke-width="9" stroke-linecap="round" />
+  <circle cx="196" cy="280" r="14" fill="#ffb8d0" opacity="0.75" />
+  <circle cx="316" cy="280" r="14" fill="#ffb8d0" opacity="0.75" />
+</svg>

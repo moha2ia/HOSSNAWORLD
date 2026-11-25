@@ -1,0 +1,29 @@
+{
+  "name": "Hossna's Secret World",
+  "short_name": "Secret World",
+  "description": "A cozy little 3D island made just for you. Explore, collect stars, and find the magic.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#f9e7e3",
+  "theme_color": "#f7d9e3",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
